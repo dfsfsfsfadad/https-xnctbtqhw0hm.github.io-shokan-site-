@@ -1,0 +1,260 @@
+
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Шоқан Уәлиханов — жизнь, труды, память</title>
+  <meta name="description" content="Краткая биография и основные труды Шоқан Уәлиханов (Чокан Валиханов). Ресурс-визитка для школьного реферата или презентации."/>
+  <meta name="author" content="Сайт-пример" />
+  <style>
+    :root{
+      --maxw:1100px;
+      --bg:#fbf9f7;
+      --card:#ffffff;
+      --muted:#55606a;
+      --accent:#2b5b6b;
+      --accent-2:#8c5a3c;
+      --radius:12px;
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+      color:#222;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      background: linear-gradient(180deg,var(--bg), #fff);
+      -webkit-font-smoothing:antialiased;
+      line-height:1.45;
+    }
+    .wrap{max-width:var(--maxw); margin:28px auto; padding:20px;}
+    header{
+      display:grid;
+      grid-template-columns: 1fr 360px;
+      gap:24px;
+      align-items:start;
+    }
+    @media (max-width:920px){ header{grid-template-columns:1fr; text-align:center} }
+    .hero{
+      background:var(--card);
+      border-radius:var(--radius);
+      padding:22px;
+      box-shadow:0 8px 30px rgba(30,40,50,0.06);
+    }
+    h1{margin:0 0 6px; font-size:28px; color:var(--accent)}
+    p.lead{margin:0 0 14px; color:var(--muted); font-size:15px}
+    .meta{display:flex; gap:10px; flex-wrap:wrap; margin-top:8px}
+    .pill{background:#f1f7f8; color:var(--accent); padding:6px 10px; border-radius:999px; font-weight:600; font-size:13px}
+
+    .hero-figure{
+      background:linear-gradient(180deg, rgba(255,255,255,0.6), rgba(0,0,0,0.02));
+      border-radius:var(--radius);
+      overflow:hidden;
+      box-shadow:0 6px 20px rgba(20,30,40,0.06);
+    }
+    .hero-figure img{width:100%; height:100%; object-fit:cover; display:block; min-height:260px}
+
+    nav{margin:14px 0 4px}
+    nav a{color:var(--accent); text-decoration:none; margin-right:12px; font-weight:600}
+    nav a:hover{text-decoration:underline}
+
+    main{margin-top:18px}
+    section{margin-bottom:18px}
+    .card{background:var(--card); border-radius:12px; padding:16px; box-shadow:0 6px 18px rgba(20,20,20,0.03)}
+    .cols{display:grid; grid-template-columns: 1fr 320px; gap:18px}
+    @media (max-width:920px){ .cols{grid-template-columns:1fr} }
+
+    .timeline{list-style:none; padding:0; margin:0}
+    .timeline li{padding:10px 0; border-left:3px solid rgba(43,91,107,0.06); margin-left:8px; position:relative}
+    .timeline li::before{content:attr(data-year); position:absolute; left:-78px; top:6px; color:var(--muted); font-weight:700}
+    @media (max-width:640px){ .timeline li::before{left:-0; display:block; margin-bottom:6px} }
+
+    .grid-3{display:grid; gap:12px; grid-template-columns: repeat(3,1fr)}
+    @media (max-width:1100px){ .grid-3{grid-template-columns:repeat(2,1fr)} }
+    @media (max-width:640px){ .grid-3{grid-template-columns:repeat(1,1fr)} }
+
+    .gallery{display:grid; grid-template-columns:repeat(3,1fr); gap:8px}
+    @media (max-width:900px){ .gallery{grid-template-columns:repeat(2,1fr)} }
+    @media (max-width:520px){ .gallery{grid-template-columns:repeat(1,1fr)} }
+
+    .quote{font-style:italic; color:var(--accent-2); border-left:4px solid rgba(140,90,60,0.12); padding:10px 14px; margin:10px 0; border-radius:6px; background:#fffaf7}
+
+    footer{margin-top:22px; text-align:center; color:var(--muted); font-size:14px}
+
+    /* small responsive */
+    .small{font-size:14px; color:var(--muted)}
+    .btn{
+      display:inline-block;
+      background:linear-gradient(90deg,var(--accent),var(--accent-2));
+      color:#fff; padding:10px 14px; border-radius:10px; text-decoration:none; font-weight:700;
+      box-shadow:0 6px 18px rgba(43,91,107,0.12);
+    }
+    .toc{font-size:14px; color:var(--muted)}
+    a.ref{color:var(--accent); text-decoration:none}
+    .kbd{background:#f3f5f6; padding:6px 8px; border-radius:6px; font-weight:700; font-size:13px}
+  </style>
+</head>
+<body>
+  <div class="wrap" role="document">
+<header>
+      <div class="hero" role="banner" aria-label="О Шокане Уәлиханове">
+        <div style="display:flex; justify-content:space-between; gap:12px; align-items:center; margin-bottom:12px;">
+          <div>
+            <div class="pill">Шоқан Уәлиханов</div>
+            <div class="small" style="margin-top:6px">Чокан Валиханов — учёный, этнограф, путешественник (1835–1865)</div>
+          </div>
+          <div class="toc">
+            <nav aria-label="Навигация по странице">
+              <a href="#bio">Биография</a>
+              <a href="#works">Труды</a>
+              <a href="#timeline">Хронология</a>
+              <a href="#gallery">Галерея</a>
+            </nav>
+          </div>
+        </div>
+
+        <h1>Шоқан (Чокан) Уәлиханов</h1>
+        <p class="lead">Казахский учёный-энциклопедист XIX века: исследователь культур Центральной Азии, историк, путешественник и переводчик.</p>
+
+        <div class="meta">
+          <div class="small">Родился: <strong>1835</strong></div>
+          <div class="small">Умер: <strong>1865</strong></div>
+          <div class="small">Языки: казахский, русский, арабская письменность, тюркские диалекты</div>
+        </div>
+
+        <p style="margin-top:12px">
+          <a class="btn" href="#works">Узнать труды</a>
+          <a class="btn" style="background:transparent; color:var(--accent); box-shadow:none; border:1px solid #efe6dd; margin-left:10px" href="#timeline">Хронология</a>
+        </p>
+      </div>
+
+      <div class="hero-figure" aria-hidden="false">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/5/5d/Valikhanov.jpg" alt="Портрет Шоқан Уәлиханов — изображение (плейсхолдер)">
+      </div>
+    </header>
+
+    <main>
+      <div class="cols" aria-live="polite">
+        <section id="bio" class="card" aria-labelledby="bio-h">
+          <h2 id="bio-h">Краткая биография</h2>
+          <p class="small">Шоқан Шыңғысұлы Уәлиханов (1835–1865) родился в семье султана, получившего образование в Омском кадетском корпусе. Он проявил исключительные способности к изучению языков и этнографии, участвовал в экспедициях, собрал ценные материалы по истории и культуре народов Центральной Азии, записал фольклорные произведения, исследовал территорию Семиречья и Восточного Туркестана.</p>
+
+          <div class="quote" aria-hidden="false">«Его работы — мост между восточным фольклором и европейской наукой XIX века.»</div>
+
+          <h3 style="margin-top:12px">Значение</h3>
+          <ul>
+            <li>Один из первых казахских исследователей, признанных российской и мировой наукой.</li>
+            <li>Записи устного творчества и этнографические описания до сих пор являются ценными источниками.</li>
+            <li>В его честь названы музеи, улицы и учебные заведения в Казахстане.</li>
+          </ul>
+        </section>
+
+        <aside class="card" aria-labelledby="facts-h">
+          <h3 id="facts-h">Быстрые факты</h3>
+          <p class="small"><strong>Родился:</strong> 1835, Кокшетауский уезд.</p>
+          <p class="small"><strong>Образование:</strong> Омский кадетский корпус.</p>
+          <p class="small"><strong>Известные направления:</strong> этнография, историческая география, фольклор.</p>
+          <p class="small"><strong>Цитата:</strong> <span style="font-weight:700">«Шоқан — пример учёного в узком возрасте»</span></p>
+
+          <h4 style="margin-top:10px">Скачать</h4>
+          <p class="small">Если нужно, могу подготовить реферат или презентацию в PPTX — напиши, и сгенерирую.</p>
+        </aside>
+      </div>
+
+      <section id="works" class="card" aria-labelledby="works-h">
+        <h2 id="works-h">Главные труды и темы исследований</h2>
+        <div class="grid-3" style="margin-top:8px">
+          <div>
+            <h3>Этнография и фольклор</h3>
+            <p class="small">Сборники казахских преданий, эпические сюжеты, записи песен и бытовых обычаев.</p>
+          </div>
+          <div>
+            <h3>География и путешествия</h3>
+<p class="small">Отчёты о поездках в Тянь-Шань, Семиречье, Восточный Туркестан; описания природных и хозяйственных условий.</p>
+          </div>
+          <div>
+            <h3>История народов</h3>
+            <p class="small">Материалы по истории казахских родов и контактов с соседними народами.</p>
+          </div>
+        </div>
+
+        <h3 style="margin-top:12px">Некоторые публикации и документы</h3>
+        <ul class="small">
+          <li>Этнографические заметки и переводы — публиковались в российских журналах XIX века.</li>
+          <li>Отчёты экспедиций и письма, содержащие наблюдения по культуре и обычаям.</li>
+          <li>Записи об эпосе и устной поэзии — важный источник для фольклористики.</li>
+        </ul>
+      </section>
+
+      <section id="timeline" class="card" aria-labelledby="timeline-h">
+        <h2 id="timeline-h">Хронология (важные даты)</h2>
+        <ul class="timeline" aria-hidden="false">
+          <li data-year="1835">Рождение Шоқана — 1835 г.</li>
+          <li data-year="1853">Поступление / обучение в Омском кадетском корпусе; начало научных интересов.</li>
+          <li data-year="1856–1860">Работа переводчиком и участие в экспедициях по Семиречью и Тянь-Шаню.</li>
+          <li data-year="1863">Публикация ряда этнографических заметок и докладов.</li>
+          <li data-year="1865">Ранняя кончина — 1865 г.; научное наследие продолжает изучаться.</li>
+        </ul>
+      </section>
+
+      <section id="gallery" class="card" aria-labelledby="gallery-h">
+        <h2 id="gallery-h">Галерея и материалы</h2>
+        <div class="gallery" style="margin-top:10px">
+          <div style="overflow:hidden; border-radius:8px"><img src="https://upload.wikimedia.org/wikipedia/commons/5/5d/Valikhanov.jpg" alt="Портрет Шоқан Уәлиханов" style="width:100%; height:100%; object-fit:cover"></div>
+          <div style="overflow:hidden; border-radius:8px"><img src="https://upload.wikimedia.org/wikipedia/commons/8/89/Valikhanov_book.jpg" alt="Иллюстрация: страницы работ" style="width:100%; height:100%; object-fit:cover"></div>
+          <div style="overflow:hidden; border-radius:8px"><img src="https://upload.wikimedia.org/wikipedia/commons/1/11/Kazakh_landscape.jpg" alt="Пейзаж Семиречья — иллюстрация" style="width:100%; height:100%; object-fit:cover"></div>
+        </div>
+
+        <p class="small" style="margin-top:10px">Изображения — публичные/плейсхолдеры (Wikimedia). Для публикации замени на лицензированные фото при необходимости.</p>
+      </section>
+
+      <section class="card" aria-labelledby="quotes-h">
+        <h2 id="quotes-h">Известные цитаты</h2>
+        <blockquote class="quote">«Шоқан своим примером показал, как важно соединять научную наблюдательность с уважением к народным традициям.»</blockquote>
+        <p class="small">Если нужны точные цитаты из писем или статей — могу найти и оформить с ссылками на источники.</p>
+      </section>
+
+      <section class="card" aria-labelledby="contact-h">
+        <h2 id="contact-h">Контакты и материалы для скачивания</h2>
+        <p class="small">Хочешь, я подготовлю реферат (1–2 страницы) или презентацию? Оставь e-mail или просто напиши, что нужно — и я сгенерирую.</p>
+
+        <form id="contactForm" onsubmit="handleSubmit(event)" style="display:grid; gap:8px; margin-top:8px">
+          <input id="email" type="email" placeholder="Email (опционально)" style="padding:10px; border-radius:8px; border:1px solid #eee">
+          <textarea id="note" rows="3" placeholder="Что подготовить? (реферат, ppt, презентация...)" style="padding:10px; border-radius:8px; border:1px solid #eee"></textarea>
+          <div style="display:flex; gap:8px; flex-wrap:wrap">
+            <button class="btn" type="submit">Отправить запрос</button>
+            <button type="button" style="background:#fff; border:1px solid #eee; padding:10px 14px; border-radius:8px" onclick="fillSample()">Пример запроса</button>
+          </div>
+          <div id="result" class="small" style="display:none; margin-top:6px"></div>
+        </form>
+      </section>
+
+      <footer>
+<div class="small">© <span id="year"></span> Справочный сайт-пример про Шоқан Уәлиханов. Материалы — для учебных целей.</div>
+      </footer>
+    </main>
+  </div>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    function handleSubmit(e){
+      e.preventDefault();
+      const email = document.getElementById('email').value.trim();
+      const note = document.getElementById('note').value.trim();
+      const res = document.getElementById('result');
+      if(!note){
+        alert('Напиши, что подготовить (реферат, презентация и т.д.).');
+        return;
+      }
+      res.style.display = 'block';
+      res.textContent = 'Заявка принята: ' + (note.length>120 ? note.slice(0,120)+'…' : note);
+      // В реальном сайте тут отправка на сервер (fetch / форма)
+      setTimeout(()=>res.style.display='none', 7000);
+    }
+
+    function fillSample(){
+      document.getElementById('note').value = 'Реферат на 1 страницу по биографии и главным трудам (на русском).';
+    }
+  </script>
+</body>
+</html>
